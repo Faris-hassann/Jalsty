@@ -1,0 +1,99 @@
+.navigation{
+    background-color: transparent;
+}
+.services-heading-text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.services-heading-text h2{
+    max-width: 100%;
+}
+.parallax{
+    height: 60vh;
+    display: grid;
+}
+.parallax-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.parallax-inner h1{
+    color: white;
+    font-size: 85px;
+}
+.parallax-inner h6{
+    color: white;
+    font-size: 24px;
+}
+.AboutParallax{
+    background: url('../images/AboutUsBg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.ClientParallax{
+    background: url('../images/Client.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.ClinicParallax{
+    background: url('../images/Clinic.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.Class{
+    margin: 10px;
+    padding: 10px;
+}
+.Class img{
+    border-radius: 7px;
+}
+.firstClass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.firstClass img{
+    max-width: 100%;
+}
+.firstClass .classImg{
+    width: 50%;
+}
+.firstClass .classText{
+    width: 50%;
+}
+.firstClass .classText h6{
+    color: var(--main-color);
+}
+.Video{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.Video video{
+    border-radius: 7px;    
+}
+.secondClass{
+    background-color: #f5f7fb;
+}
+.second{
+    flex-direction: row-reverse;
+}
+@media (max-width: 700px) {
+    .firstClass{
+        flex-direction: column;
+    }
+    .firstClass .classImg{
+        width: 100%;
+    }
+    .firstClass .classText{
+        width: 100%;
+    }
+    .second{
+        flex-direction: column-reverse;
+    }
+}
