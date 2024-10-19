@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Page</title>
+    <!--==Fav-icon=====================-->
+    <link rel="shortcut icon" href="images/fav-icon.png">
+    <!--==CSS==========================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--==Font-Awesome-for-icons=====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CoreUI CSS -->
+    <!-- CoreUI Latest Version CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.3.0/dist/css/coreui.min.css" rel="stylesheet"
+        integrity="sha384-xoqj/dNd8hPEtWceTOFHyTbTG2Ln5wUwR/Jncy+UVxl3shhe0UEawWoS77B1Lb7W" crossorigin="anonymous">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/Components.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <!--**menu-btn*****-->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+        <!--**logo*********-->
+        <a href="index.html" class="logo"><span>Jal</span>saty</a>
+        <!--**menu*********-->
+        <ul class="menu">
+            <li><a href="#our-team">Find A Doctor</a></li>
+            <li><a href="#our-services">Our Services</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    For More Information
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./Pages/Doctor.html">Doctor</a></li>
+                    <li><a class="dropdown-item" href="./Pages/Clinc.html">Clinc</a></li>
+                    <li><a class="dropdown-item" href="./Pages/Client.html">Client</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!--**contact*******-->
+        <a href="#" class="nav-appointment-btn">Appointment</a>
+    </nav>
+    <!--nav-end-->
+    <!-- background -->
+    <section class="DoctorLanding"></section>
+    <!-- cards -->
+    <div class="container">
+        <!-- Personal Card -->
+        <div class="card mb-3 mt-3">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <img src="../images/main-bg1.png" class="img-fluid rounded-start" alt="Doctor Image" width="250px"
+                        height="250px">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Doctor: Name(Faris Hassan)</h5>
+                        <p class="card-text m-0"><small class="text-muted">Obstetrician</small></p>
+                        <p class="card-text mt-2"><strong>Rate:</strong></p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="card-text mt-3"><i class="fa-solid fa-location-dot location"></i> Amman، Jabal Amman،
+                            Jordan- Amman</p>
+                        <p class="card-text mt-2"><i class="fa-regular fa-money-bill-1 money"></i> 100 JOD</p>
+                        <a href="" class="btn btn-outline-success mt-2"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Description Card -->
+        <div class="card text-center m-3">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="details-tab" data-bs-toggle="tab" href="#details-content"
+                            aria-current="true">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="treatment-tab" data-bs-toggle="tab"
+                            href="#treatment-content">Treatment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="reviews-tab" data-bs-toggle="tab" href="#reviews-content">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="reviews-tab" data-bs-toggle="tab" href="#Blogs">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tab content -->
+            <div class="card-body text-start tab-content">
+                <!-- Details Section -->
+                <div class="tab-pane fade show active" id="details-content">
+                    <h5 class="card-title">Background Description</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nobis cum doloribus fugiat id
+                        dolorum fugit porro distinctio eius harum...
+                    </p>
+                    <h5 class="card-title mt-3">Education</h5>
+                    <p class="card-text">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                    </ol>
+                    </p>
+                    <h5 class="card-title mt-3">Specialties</h5>
+                    <p class="card-text">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
+                    </p>
+                    <h5 class="card-title mt-3">Certification</h5>
+                    <p class="card-text">
+                    <ul class="list-group">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                    </ul>
+                    </p>
+                    <h5 class="card-title mt-3">Professional Membership</h5>
+                    <p class="card-text">
+                    <ul class="list-group">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                    </ul>
+                    </p>
+                    <h5 class="card-title mt-3">Spoken Languages</h5>
+                    <p class="card-text">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">English</li>
+                        <li class="list-group-item">Arabic</li>
+                        <li class="list-group-item">French</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <!-- Treatment Section -->
+                <div class="tab-pane fade" id="treatment-content">
+                    <h5 class="card-title">Treatment Information</h5>
+                    <p class="card-text">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cervical Tumor Removal</li>
+                        <li class="list-group-item">Cervical Tumor Removal</li>
+                        <li class="list-group-item">Cervical Tumor Removal</li>
+                        <li class="list-group-item">Cervical Tumor Removal</li>
+                        <li class="list-group-item">Cervical Tumor Removal</li>
+                        <li class="list-group-item">Cervical Tumor Removal</li>
+                        <li class="list-group-item">Cervical Tumor Removal</li>
+                        <li class="list-group-item">Cervical Tumor Removal</li>
+                        <li class="list-group-item">Cervical Tumor Removal</li>
+                        <li class="list-group-item">Cervical Tumor Removal</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <!-- Reviews Section -->
+                <div class="tab-pane fade" id="reviews-content">
+                    <h5 class="card-title">Customer Reviews</h5>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5 class="card-Name">Doctor</h5>
+                        </div>
+                        <div class="col-sm-6 text-end">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5 class="card-Name">Health Facilities Quality</h5>
+                        </div>
+                        <div class="col-sm-6 text-end">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5 class="card-Name">Waiting Time</h5>
+                        </div>
+                        <div class="col-sm-6 text-end">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5 class="card-Name">Reception</h5>
+                        </div>
+                        <div class="col-sm-6 text-end">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Leave a Comment Here</label>
+                    </div>
+                    <div class="comments mt-3">
+                        <h5 class="card-title">Comments:</h5>
+                        <div class="card mt-3">
+                            <h5 class="card-header">Commenter Name</h5>
+                            <div class="card-body">
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <h5 class="card-header">Commenter Name</h5>
+                            <div class="card-body">
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <h5 class="card-header">Commenter Name</h5>
+                            <div class="card-body">
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <h5 class="card-header">Commenter Name</h5>
+                            <div class="card-body">
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="Blogs">
+                    <div class="card mt-3">
+                        <h5 class="card-header">Blog Title</h5>
+                        <div class="card-body">
+                          <h5 class="card-title">About Blog</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary mt-2">Go to Link</a>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <h5 class="card-header">Blog Title</h5>
+                        <div class="card-body">
+                          <h5 class="card-title">About Blog</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary mt-2">Go to Link</a>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <h5 class="card-header">Blog Title</h5>
+                        <div class="card-body">
+                          <h5 class="card-title">About Blog</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary mt-2">Go to Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of nav -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
