@@ -1,0 +1,923 @@
+<!--DOCTYPE html-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==title========================-->
+    <title>Medical Website HTML</title>
+    <!--==Fav-icon=====================-->
+    <link rel="shortcut icon" href="images/fav-icon.png">
+    <!--==CSS==========================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--==Font-Awesome-for-icons=====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--==Hero-Section========================-->
+    <section id="hero">
+
+        <!--==navigation====================-->
+        <nav class="navigation">
+            <!--**menu-btn*****-->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <!--**logo*********-->
+            <a href="index.html" class="logo"><span>Jal</span>saty</a>
+            <!--**menu*********-->
+            <ul class="menu">
+                <li><a href="#our-team">Find A Doctor</a></li>
+                <li><a href="#our-services">Our Services</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        For More Information
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="./Pages/Doctor.html">Doctor</a></li>
+                        <li><a class="dropdown-item" href="./Pages/Clinc.html">Clinc</a></li>
+                        <li><a class="dropdown-item" href="./Pages/Client.html">Client</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--**contact*******-->
+            <a href="#" class="nav-appointment-btn">Appointment</a>
+        </nav><!--nav-end-->
+
+
+        <!--==Content============================-->
+        <div class="hero-content">
+            <!--**text****************-->
+            <div class="hero-text">
+                <h1>Feel Better About Finding HealthCare</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, vitae ex! Fuga similique repudiandae
+                    molestiae libero.</p>
+                <!--btns-->
+                <div class="hero-text-btns">
+                    <a href="./Pages/SignIn.html"><i class="fa-solid fa-magnifying-glass"></i> Sign In</a>
+                    <a href="./Pages/SignUp.html"><i class="fa-solid fa-check"></i> Sign Up</a>
+                </div>
+            </div>
+            <!--**img*****************-->
+            <div class="hero-img">
+                <img alt="" src="images/main-bg1.png">
+            </div>
+        </div>
+
+
+    </section><!--hero-end-->
+
+
+    <!--==appointment-search===============================-->
+    <div class="appointment-search-container">
+        <h3>Find Best HealthCare</h3>
+        <div class="appointment-search">
+            <div class="appo-search-country">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./images/jordan.png" alt="Jordan Flag">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#"><img src="./images/Egypt.png" alt="Egypt Flag"> Egypt</a></li>
+                </ul>
+            </div>
+            <!-- Location Search Box -->
+            <div class="appo-search-box">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Treatment
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Treatment 1</a></li>
+                    <li><a class="dropdown-item" href="#">Treatment 2</a></li>
+                    <li><a class="dropdown-item" href="#">Treatment 3</a></li>
+                    <li><a class="dropdown-item" href="#">Treatment 4</a></li>
+                </ul>
+            </div>
+            <!-- Doctor Search Box -->
+            <div class="appo-search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search By Doctor Name">
+            </div>
+            <!-- Search Button -->
+            <a href="./Pages/Search.html">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+
+    <!--==service-info===========================-->
+    <section class="what-we-provide">
+
+        <!--**box1***********-->
+        <div class="w-info-box w-i-box1">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-solid fa-desktop"></i>
+            </div>
+            <!--text-->
+            <a class="w-info-text">
+                <strong>Jalsty Online</strong>
+                <p>You Can Attend Online</p>
+            </a>
+        </div>
+        <!--**box2***********-->
+        <div class="w-info-box w-i-box2">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <!--text-->
+            <div class="w-info-text">
+                <strong>Jalsty In Home</strong>
+                <p>You Can Attend In Home</p>
+            </div>
+        </div>
+        <!--**box3***********-->
+        <div class="w-info-box w-i-box3">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-solid fa-house-chimney-medical"></i>
+            </div>
+            <!--text-->
+            <div class="w-info-text">
+                <strong>Jalsty In Clinic</strong>
+                <p>You Can Attend In Clinc</p>
+            </div>
+        </div>
+
+    </section><!--end-->
+
+
+    <!--== Speciality ===========================-->
+    <section class="Speciality">
+        <div class="">
+            <div class="SpecialityHeader">
+                <div class="SpecialityText">
+                    <h3>Choose your <span>Speciality</span></h3>
+                </div>
+                <div class="SpecialityLink text-start">
+                    <a href="#">show all</a>
+                </div>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiperSpeciality">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="icon-container">
+                            <img src="./images/test.svg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Repeat for each speciality -->
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="SpecialityHeader">
+                <div class="SpecialityText">
+                    <h3>Choose your <span>Treatment</span></h3>
+                </div>
+                <div class="SpecialityLink text-start">
+                    <a href="#">show all</a>
+                </div>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiperSpeciality">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="treatment-container">
+                            <img src="./images/story_img.jpg" class="icon-img" alt="أنف وحنجرة">
+                            <p>test</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==Story=============================-->
+    <section id="our_story">
+
+        <!--**img**-->
+        <div class="our-story-img">
+            <img src="images/AboutUs.jpg" />
+            <!-- <a href="#" class="story-play-btn">
+                <i class="fa-solid fa-play"></i>
+                Play Video
+            </a> -->
+        </div>
+        <!--**text**-->
+        <div class="our-stroy-text">
+            <h2>Short Story About Our Jalsty.</h2>
+            <p>It is your comprehensive platform that brings together a group of consultants and experts specialized in psychotherapy, family counseling, speech therapy, occupational therapy, and physiotherapy.</p>
+            <p>We provide you with integrated care that meets your needs, with the ability to book treatment and counseling sessions easily and quickly. At “My Session”, we reach you wherever you are, to provide you with the support you need to achieve healing and psychological and physical balance from the comfort of your home. <a href="./Pages/AboutUs.html">Read More</a></p>
+            <!--numbers-of-happy-patients-->
+            <div class="story-numbers-container">
+                <!--box-->
+                <div class="story-numbers-box s-n-box1">
+                    <strong>1000+</strong>
+                    <span>Patients</span>
+                </div>
+                <!--box-->
+                <div class="story-numbers-box s-n-box2">
+                    <strong>215+</strong>
+                    <span>Expert Doctors</span>
+                </div>
+                <!--box-->
+                <div class="story-numbers-box s-n-box3">
+                    <strong>315+</strong>
+                    <span>Clinics</span>
+                </div>
+                <!--box-->
+                <div class="story-numbers-box s-n-box4">
+                    <strong>106+</strong>
+                    <span>FeedBacks</span>
+                </div>
+            </div>
+        </div>
+
+    </section><!--story-end-->
+
+
+
+    <!--==Our-Services======================-->
+    <section id="our-services">
+
+        <!--**heading********************-->
+        <div class="services-heading">
+            <!--text-->
+            <div class="services-heading-text">
+                <strong>Our Services</strong>
+                <h2>High Quality Services For You</h2>
+            </div>
+            <!--btns-->
+            <div class="service-slide-btns">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <!--**container*******************-->
+        <div class="services-box-container">
+
+            <!-- Swiper -->
+            <div class="swiper mySwiperservices">
+                <div class="swiper-wrapper">
+                    <!--**1*******-->
+                    <div class="swiper-slide">
+                        <!--**box1**-->
+                        <div class="service-box s-box1">
+                            <!--icon-->
+                            <i class="fa-solid fa-brain"></i>
+                            <!--title-->
+                            <strong>Psychological Service</strong>
+                            <!--details-->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam perspiciatis
+                                impedit consequuntur</p>
+                            <!--read more-->
+                            <a href="#">Read More</a>
+                        </div>
+                    </div><!--slide-end-->
+                    <!--**1*******-->
+                    <div class="swiper-slide">
+                        <!--**box1**-->
+                        <div class="service-box s-box3">
+                            <!--icon-->
+                            <i class="fa-solid fa-face-smile"></i>
+                            <!--title-->
+                            <strong>Occupational Therapy</strong>
+                            <!--details-->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam perspiciatis
+                                impedit consequuntur</p>
+                            <!--read more-->
+                            <a href="#">Read More</a>
+                        </div>
+                    </div><!--slide-end-->
+                    <!--**1*******-->
+                    <div class="swiper-slide">
+                        <!--**box1**-->
+                        <div class="service-box s-box4">
+                            <!--icon-->
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <!--title-->
+                            <strong>Phsiotherapy Service</strong>
+                            <!--details-->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam perspiciatis
+                                impedit consequuntur</p>
+                            <!--read more-->
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!--**box1**-->
+                        <div class="service-box s-box2">
+                            <!--icon-->
+                            <i class="fa-solid fa-people-roof"></i>
+                            <!--title-->
+                            <strong>Family Service</strong>
+                            <!--details-->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam perspiciatis
+                                impedit consequuntur</p>
+                            <!--read more-->
+                            <a href="#">Read More</a>
+                        </div>
+                    </div><!--slide-end-->
+                </div><!--wrapper-end-->
+            </div><!--swiper-end-->
+
+        </div>
+
+        <!--btn-->
+        <span class="service-btn">Contact Us For Need Any Help And Services <a href="#">Let's get Started</a></span>
+
+    </section><!--services-end-->
+
+
+    <!--==Why-choose-us=======================-->
+    <section id="why-choose-us">
+
+        <!--**left*****************-->
+        <div class="why-choose-us-left">
+            <h3>Why Choose Us?</h3>
+            <!--==container====-->
+            <div class="why-choose-box-container">
+                <!--**box**-->
+                <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>Trusted experts and consultants</strong>
+                        <p>Expert mental health care tailored to you.</p>
+                    </div>
+                </div>
+                <!--**box**-->
+                <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>Continuous follow-up of patients</strong>
+                        <p>Dedicated support for your mental health journey.</p>
+                    </div>
+                </div>
+                <!--**box**-->
+                <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>We reach you wherever you are</strong>
+                        <p>Accessible mental health care anytime, anywhere.</p>
+                    </div>
+                </div>
+                <!--**box**-->
+                <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>Available 24/7</strong>
+                        <p>Available anytime in anywhere.</p>
+                    </div>
+                </div>
+            </div>
+            <!--==btn========-->
+            <a href="#" class="why-choose-us-btn">Make Appointment</a>
+        </div><!--left-end-->
+
+        <!--**right*******************-->
+        <div class="why-choose-us-right">
+            <h3>Emergency?<br />
+                Contact Us
+            </h3>
+            <p>We are here to answer all your questions.</p>
+            <p>We are here and always ready to help. Tell us how we can serve you and we will get back to you as soon as possible.</p>
+            <!--==container====-->
+            <div class="w-right-contact-container">
+                <!--**box**-->
+                <div class="w-right-contact-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <!--text-->
+                    <div class="w-right-contact-box-text">
+                        <span>Call Us Now</span>
+                        <strong>+123 4567 89</strong>
+                    </div>
+                </div>
+                <!--**box**-->
+                <div class="w-right-contact-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <!--text-->
+                    <div class="w-right-contact-box-text">
+                        <span>Mail Us</span>
+                        <strong>info@example.com</strong>
+                    </div>
+                </div>
+            </div>
+        </div><!--right-end-->
+
+    </section><!--end-->
+
+
+
+    <!--==Team===========================-->
+    <section id="our-team">
+
+        <!--**heading*****************-->
+        <div class="our-team-heading">
+            <h3>Meet Our Specialist</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <!--**team-container***********-->
+        <div class="team-box-container">
+            <!-- Swiper -->
+            <div class="swiper mySwiperteam">
+                <div class="swiper-wrapper">
+                    <!--**1***-->
+                    <div class="swiper-slide">
+                        <!--**box**-->
+                        <div class="team-box">
+                            <!--img-->
+                            <div class="team-img">
+                                <img alt="" src="images/d1.png">
+                            </div>
+                            <!--text-->
+                            <div class="team-text">
+                                <strong>Dr. Paradox Alex</strong>
+                                <span>Skin Specialist</span>
+                            </div>
+                        </div>
+                    </div><!--end-slide-->
+                    <!--**1***-->
+                    <div class="swiper-slide">
+                        <!--**box**-->
+                        <div class="team-box">
+                            <!--img-->
+                            <div class="team-img">
+                                <img alt="" src="images/d2.png">
+                            </div>
+                            <!--text-->
+                            <div class="team-text">
+                                <strong>Dr. Paradox Alex</strong>
+                                <span>Skin Specialist</span>
+                            </div>
+                        </div>
+                    </div><!--end-slide-->
+                    <!--**1***-->
+                    <div class="swiper-slide">
+                        <!--**box**-->
+                        <div class="team-box">
+                            <!--img-->
+                            <div class="team-img">
+                                <img alt="" src="images/d3.png">
+                            </div>
+                            <!--text-->
+                            <div class="team-text">
+                                <strong>Dr. Paradox Alex</strong>
+                                <span>Skin Specialist</span>
+                            </div>
+                        </div>
+                    </div><!--end-slide-->
+                    <!--**1***-->
+                    <div class="swiper-slide">
+                        <!--**box**-->
+                        <div class="team-box">
+                            <!--img-->
+                            <div class="team-img">
+                                <img alt="" src="images/d4.png">
+                            </div>
+                            <!--text-->
+                            <div class="team-text">
+                                <strong>Dr. Paradox Alex</strong>
+                                <span>Skin Specialist</span>
+                            </div>
+                        </div>
+                    </div><!--end-slide-->
+                    <!--**1***-->
+                    <div class="swiper-slide">
+                        <!--**box**-->
+                        <div class="team-box">
+                            <!--img-->
+                            <div class="team-img">
+                                <img alt="" src="images/d5.png">
+                            </div>
+                            <!--text-->
+                            <div class="team-text">
+                                <strong>Dr. Paradox Alex</strong>
+                                <span>Skin Specialist</span>
+                            </div>
+                        </div>
+                    </div><!--end-slide-->
+                </div><!--wrapper-end-->
+            </div><!--swiper-end-->
+        </div>
+
+    </section><!--team-end-->
+
+
+
+    <!--==Testimonials============================-->
+    <section id="testimonials">
+
+        <!--**heading****************-->
+        <div class="testimonials-heading">
+            <h3>Our Patients FeedBack About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates cupiditate, rerum rem odio
+                fugit</p>
+        </div>
+
+
+        <!--**testimonials-Content****-->
+        <div class="testimonials-content">
+
+            <!--**img************-->
+            <div class="testimonials-img">
+                <img alt="" src="images/femaleDoctor.png">
+            </div>
+
+            <!--**box-container**-->
+            <div class="testimonials-box-container">
+
+                <!-- Swiper -->
+                <div class="swiper mySwipertesti">
+                    <div class="swiper-wrapper">
+                        <!--**1***********-->
+                        <div class="swiper-slide">
+                            <!--**box**-->
+                            <div class="testimonials-box">
+                                <!--profile-->
+                                <div class="t-profile">
+                                    <!--img-->
+                                    <div class="t-profile-img">
+                                        <img alt="" src="images/t1.jpg">
+                                    </div>
+                                    <!--text-->
+                                    <div class="t-profile-text">
+                                        <strong>Client Name</strong>
+                                        <span>From China</span>
+                                        <div class="t-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--feedback-->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est odit dicta sequi
+                                    labore perferendis ut veritatis expedita, nihil sint! Delectus aut id voluptatibus
+                                    nemo dolorum, quos consequatur commodi repudiandae?</p>
+                            </div><!--box-end-->
+                        </div><!--slide-end-->
+
+                        <!--**2***********-->
+                        <div class="swiper-slide">
+                            <!--**box**-->
+                            <div class="testimonials-box">
+                                <!--profile-->
+                                <div class="t-profile">
+                                    <!--img-->
+                                    <div class="t-profile-img">
+                                        <img alt="" src="images/t1.jpg">
+                                    </div>
+                                    <!--text-->
+                                    <div class="t-profile-text">
+                                        <strong>Client Name</strong>
+                                        <span>From China</span>
+                                        <div class="t-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--feedback-->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est odit dicta sequi
+                                    labore perferendis ut veritatis expedita, nihil sint! Delectus aut id voluptatibus
+                                    nemo dolorum, quos consequatur commodi repudiandae?</p>
+                            </div><!--box-end-->
+                        </div><!--slide-end-->
+
+                        <!--**3***********-->
+                        <div class="swiper-slide">
+                            <!--**box**-->
+                            <div class="testimonials-box">
+                                <!--profile-->
+                                <div class="t-profile">
+                                    <!--img-->
+                                    <div class="t-profile-img">
+                                        <img alt="" src="images/t1.jpg">
+                                    </div>
+                                    <!--text-->
+                                    <div class="t-profile-text">
+                                        <strong>Client Name</strong>
+                                        <span>From China</span>
+                                        <div class="t-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--feedback-->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est odit dicta sequi
+                                    labore perferendis ut veritatis expedita, nihil sint! Delectus aut id voluptatibus
+                                    nemo dolorum, quos consequatur commodi repudiandae?</p>
+                            </div><!--box-end-->
+                        </div><!--slide-end-->
+
+                    </div><!--wrapper-end-->
+                    <div class="swiper-pagination"></div>
+                </div><!--swiper-end-->
+
+            </div><!--container-end-->
+
+        </div><!--content-end-->
+
+    </section><!--testimonials-end-->
+
+
+
+    <!--==Subscribe===========================-->
+    <section id="subscribe">
+        <h3>Subscribe For New Updates From WeCare</h3>
+        <!--subcribe-box-->
+        <form class="subscribe-box">
+            <input type="email" placeholder="Example@gmail.com">
+            <button>Subscribe</button>
+        </form>
+    </section><!--end-->
+
+
+    <footer>
+        <div class="footer-container">
+            <!--**comoany-box**-->
+            <div class="footer-company-box">
+                <!--logo-->
+                <a href="#" class="logo"><span>Jal</span>sty</a>
+                <!--details-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas neque repudiandae nihil.</p>
+                <!--social-box-->
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>Main Link's</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>External Link's</strong>
+                <ul>
+                    <li><a href="#">Our Product's</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Trem's and Condition's</a></li>
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>External Link's</strong>
+                <ul>
+                    <li><a href="#">Our Product's</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Trem's and Condition's</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <!--**bottom**********************-->
+        <div class="footer-bottom">
+            <span class="footer-owner">Made By Faris Hassan</span>
+            <span class="copyright">&#169; Copyright 2024 - Fox Design</span>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="js/Script.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
